@@ -12,5 +12,9 @@ Generates a report with statistics of the crimes in Boston.
 
 The source data is Kaggle's datasets:  https://www.kaggle.com/AnalyzeBoston/crimes-in-boston
 
-# Usage
-spark-submit crimes_report.py <crimes.csv> <offense_codes.csv> <output_dir>
+## Usage
+spark-submit crimes_report.py <hdfs path crimes.csv> <hdfs path offense_codes.csv> <hdfs output_dir>
+
+### Example
+spark-submit boston_crimes_report.py hdfs:///user/ubuntu/crime.csv hdfs:///user/ubuntu/offense_codes.csv hdfs:///user/ubuntu/result
+
